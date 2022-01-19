@@ -1,0 +1,38 @@
+.RainyDaysLogo {
+  max-width: 400px;
+  max-height: 100px;
+  position: fixed;
+  left: 30px;
+  margin-top: 30px;
+}
+nav {
+  float: left;
+  padding: 160px 16px;
+  text-decoration: none;
+  font-family: josefin-sans, sans-serif;
+  font-size: 18px;
+  color: #732922;
+}
+li {
+  display: inline;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.new-arrivals-heading {
+  font-family: soap, sans-serif;
+  font-size: 20px;
+  color: #d94d1a;
+  position: absolute;
+  left: 30px;
+  top: 800px;
+}
+.Footer-logo {
+  max-width: 200px;
+  max-height: 75px;
+  position: relative;
+  left: 30px;
+  margin-bottom: 30px;
+}
