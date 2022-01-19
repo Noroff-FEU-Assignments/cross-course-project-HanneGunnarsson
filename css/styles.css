@@ -37,8 +37,24 @@ ul {
   top: 900px;
 }
 .product-image-1 {
-  width: 764px;
-  height: 556px;
+  width: 530px;
+  height: 350px;
+  padding-left: 90px;
+}
+.The-Drenchcoat {
+  font-family: azo-sans-web, sans-serif;
+  font-size: 14px;
+  color: #f2d027;
+  padding-left: 420px;
+}
+.button-shop-now-1 {
+  background-color: #f2d027;
+  border-color: #f2d027;
+  padding: 10px 30px;
+  font-family: azo-sans-web, sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
 }
 
 .Footer-logo {
