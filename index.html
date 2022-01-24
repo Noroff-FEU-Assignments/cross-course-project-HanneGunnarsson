@@ -5,23 +5,20 @@
     <meta name="description" content="The home page to the Raindydays webshop."/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
   <body>
     <header>
-      <img
-        src="images/RainyDays_Logo.png"
-        alt="RainyDays Logo"
-        class="RainyDaysLogo"
-      />
+      <div><img src="images/RainyDays_Logo.png" class="RainyDaysLogo" alt="RainyDays Logo">
+      </div>
+      <input type="checkbox" id="menu-checkbox">
+      <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
       <nav>
-        <ul>
-          <li>Products</li>
-          <li>About</li>
-          <li>Contact</li>
-          <input type="text" placeholder="Search" />
-        </ul>
-        <button type="button">Register Now</button>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
       </nav>
+      <button type="button">Register Now</button>
     </header>
     <main>
       <img src="images/header-image.jpg" alt="Girl in the rain" class="header-image">
@@ -38,7 +35,7 @@
       <section id="product-2" class="product-2"></section>
         <h3>Rain or Shine</h3>
         <p>In stock</p>
-        <button type="button" class="button-shop-now-2font-family: azo-sans-web, sans-serif;font-family: azo-sans-web, sans-serif;">SHOP NOW</button>
+        <button type="button" class="button-shop-now-2">SHOP NOW</button>
       </section>
       <section id="product-3" class="product-3"></section>
         <h3>Traveller</h3>
