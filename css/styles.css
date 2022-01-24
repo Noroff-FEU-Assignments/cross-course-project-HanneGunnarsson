@@ -7,7 +7,7 @@
 }
 nav {
   float: left;
-  padding: 200px 16px;
+  padding: 200px 16font-family: azo-sans-web, sans-serif;font-family: azo-sans-web, sans-serif;px;
   text-decoration: none;
   font-family: josefin-sans, sans-serif;
   font-size: 18px;
@@ -36,31 +36,14 @@ ul {
   padding-left: 90px;
   top: 900px;
 }
-.product-image-1 {
-  width: 530px;
-  height: 350px;
-  padding-left: 90px;
-}
-.The-Drenchcoat {
-  font-family: azo-sans-web, sans-serif;
-  font-size: 14px;
-  color: #f2d027;
-  padding-left: 420px;
-}
-.button-shop-now-1 {
-  background-color: #f2d027;
-  border-color: #f2d027;
-  padding: 10px 30px;
-  font-family: azo-sans-web, sans-serif;
-  font-size: 14px;
-  color: white;
-  font-weight: bold;
-}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
 
-.Footer-logo {
-  max-width: 200px;
-  max-height: 75px;
-  position: relative;
-  left: 30px;
-  margin-bottom: 30px;
-}
+  .footer-logo {
+  max-width: 100px;
+  max-height: 50px;
+position: relative;
+  }
