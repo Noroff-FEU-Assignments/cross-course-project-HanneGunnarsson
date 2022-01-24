@@ -57,16 +57,20 @@ nav a {
   padding-left: 90px;
   top: 900px;
 }
+
 .products-flex-container {
   display: flex;
-  flex-wrap: wrap;
-  padding: 4px 4px;
 }
 
+.footer-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 .footer-logo {
   max-width: 100px;
   max-height: 50px;
-  position: relative;
+  position: static;
 }
 
 @media (min-width: 600px) {
@@ -78,5 +82,10 @@ nav a {
 
   nav a {
     display: inline-block;
+  }
+}
+@media (max-width: 600px) {
+  .footer-flex-container {
+    flex-direction: column;
   }
 }
