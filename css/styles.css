@@ -40,8 +40,6 @@ nav a {
 }
 
 .register-button {
-  display: flex;
-  justify-content: space-between;
   background: #d94d1a;
   border: none;
   color: white;
@@ -49,7 +47,8 @@ nav a {
   font-family: azo-sans-web, sans-serif;
   font-weight: bold;
 }
-.top-image {
+
+.header-image {
   width: 100%;
   height: auto;
   position: static;
@@ -104,22 +103,24 @@ nav a {
   flex-wrap: wrap;
   justify-content: flex-end;
   color: #732922;
-  background: rgb(217, 77, 26);
-  opacity: 18%;
+  background: rgba(217, 77, 26, 0.18);
 }
+
+.footer-flex-container > div {
+  margin: 15px;
+}
+
 .footer-logo {
   max-width: 100px;
   max-height: 50px;
-  position: static;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 @media (min-width: 600px) {
-  nav {
-  }
-  .hamburger-icon {
+  .hamburger-menu {
     display: none;
   }
-
   nav a {
     display: inline-block;
   }
@@ -140,8 +141,15 @@ nav a {
   }
   .footer-flex-container {
     flex-direction: column;
+    text-align: center;
   }
   .RainyDaysLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .footer-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
