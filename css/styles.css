@@ -4,6 +4,7 @@
   position: static;
   margin-top: 30px;
   margin-left: 10px;
+  margin-bottom: 15px;
 }
 nav,
 #menu-checkbox {
@@ -83,7 +84,7 @@ nav a {
 }
 
 .drenchcoat-h2 {
-  position: absolute;
+  position: static;
   color: #f2d027;
   bottom: 8px;
   right: 16px;
