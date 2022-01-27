@@ -9,44 +9,52 @@
   position: static;
   margin-top: 30px;
   margin-left: 10px;
-  margin-bottom: 15px;
+}
+
+.hamburger-icon {
+  font-size: 1.25rem;
+  color: #732922;
 }
 
 nav,
 #menu-checkbox {
   display: none;
   padding: 20px 16px;
-  font-family: azo-sans-web, sans-serif;
   text-decoration: none;
   font-size: 18px;
   color: #732922;
 }
 
 nav {
-  position: static;
-  display: flex;
-  background: none;
-  left: 0px;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  display: block;
+  background: #d94d1a;
+  width: 90px;
+  height: 150px;
+  margin-top: 10px;
   text-decoration: none;
 }
 
 nav a {
-  display: inline-flex;
-  gap: 10px;
+  display: flex;
   text-decoration: none;
-  color: #732922;
-  font-weight: bold;
-  font-family: azo-sans-web, sans-serif;
+  color: white;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  font-family: josefin-sans, sans-serif;
 }
 
 #menu-checkbox:checked ~ nav {
   display: block;
 }
 
+.top-section {
+  margin-top: 70px;
+}
+
 .register-now a:link {
-  position: static;
+  display: flex;
+  justify-content: flex-end;
   background: #d94d1a;
   color: white;
   text-decoration: none;
@@ -57,12 +65,10 @@ nav a {
   font-weight: bold;
   font-size: 14px;
 }
-
 .header-image {
   width: 100%;
   height: auto;
   position: static;
-  margin-top: 87px;
 }
 
 h2 {
@@ -124,12 +130,22 @@ a:hover {
   .hamburger-icon {
     display: none;
   }
+
+  nav {
+    display: inline-block;
+    background: none;
+    width: 100%;
+    font-family: josefin-sans, sans-serif;
+    font-size: 1rem;
+  }
+
+  nav a {
+    display: inline-block;
+    color: #732922;
+  }
 }
 
 @media (max-width: 600px) {
-  nav {
-    display: none;
-  }
   .new-arrivals-heading {
     text-align: center;
     padding: 0px;
