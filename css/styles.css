@@ -11,9 +11,19 @@
   margin-left: 10px;
 }
 
-.hamburger-icon {
+.icons {
+  display: flex;
+  flex: 3;
+  gap: 10px;
+  justify-content: space-between;
   font-size: 1.25rem;
   color: #732922;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.hamburger-icon {
+  flex: 1;
 }
 
 nav,
@@ -53,8 +63,6 @@ nav a {
 }
 
 .register-now a:link {
-  display: flex;
-  justify-content: flex-end;
   background: #d94d1a;
   color: white;
   text-decoration: none;
@@ -65,6 +73,13 @@ nav a {
   font-weight: bold;
   font-size: 14px;
 }
+
+.register-now {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
 .header-image {
   width: 100%;
   height: auto;
@@ -107,8 +122,20 @@ img {
   margin-top: 30px;
 }
 
+h3 {
+  font-family: azo-sans-web, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+p {
+  font-family: josefin-sans, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .footer-flex-container > div {
-  margin: 15px;
+  margin: 20px;
 }
 
 .footer-logo {
@@ -116,6 +143,10 @@ img {
   max-height: 50px;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+.footer-logo-mobile {
+  display: none;
 }
 
 a:link {
@@ -127,6 +158,13 @@ a:hover {
 }
 
 @media (min-width: 600px) {
+  .icons {
+    display: flex;
+    flex: 3;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
   .hamburger-icon {
     display: none;
   }
@@ -151,14 +189,25 @@ a:hover {
     padding: 0px;
   }
 
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
   .products {
     flex-direction: column;
+    max-height: 100%;
   }
 
   .footer-flex-container {
     flex-direction: column;
     text-align: center;
     position: static;
+  }
+
+  .footer-flex-container > div {
+    margin: 5px;
   }
 
   .RainyDaysLogo {
@@ -168,6 +217,10 @@ a:hover {
     width: 50%;
   }
   .footer-logo {
+    display: none;
+  }
+
+  .footer-logo-mobile {
     display: block;
     margin-left: auto;
     margin-right: auto;
