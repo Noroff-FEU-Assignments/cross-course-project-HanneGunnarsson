@@ -28,11 +28,13 @@
       <div class="icons">
         <label for="menu-checkbox" class="hamburger-icon">
           <i class="fas fa-bars"></i></label>
-        <label for="user-icon" class="user-icon">
-          <i class="fas fa-user"></i>
-        </label>
         <label for="bag-icon" class="bag-icon">
           <i class="fas fa-shopping-bag"></i>
+          <a href="checkout.html">Bag</a>
+        </label>
+        <label for="user-icon" class="user-icon">
+          <i class="fas fa-user"></i>
+          <a href="logon.html">User</a>
         </label>
         </div>
         <div>
@@ -41,9 +43,8 @@
           <a href="products.html">Products</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
-          </div>
         </nav>
-      </div>
+        </div>
     </header>
     <main>
       <section class="top-section">
@@ -54,22 +55,25 @@
         />
       </section>
       <section>
-        <h2>new arrivals</h2>
+        <h2 class="new-arrivals">new arrivals</h2>
         <div class="products">
           <div class="featured-product">
             <img src="images/product-image-1.jpg" alt="Woman wearing yellow raincoat on walk">
-            <h3>The Drenchcoat</h3>
-            <a href="product.html">Shop Now</a>
+          <div class="featured-product-content"><h3>The Drenchcoat</h3>
+            <p class="featured-stock-status">In stock</p>
+            <a href="product.html">SHOP NOW</a></div>
           </div>
           <div class="product">
             <img src="images/product-image-2.jpg" alt="Person in blue hooded jacket">
-            <h3>Rain or Shine</h3>
-            <a href="product.html">Shop Now</a>
+            <div class="product-content"><h3>Rain or Shine</h3>
+            <p class="stock-status">In stock</p>
+            <a href="product.html">SHOP NOW</a></div>
           </div>
           <div class="product">
             <img src="images/product-image-3.jpg" alt="Man on hike wearing green jacket">
-            <h3>Traveller</h3>
-            <a href="product.html">Shop Now</a>
+            <div class="product-content"><h3>Traveller</h3>
+            <p class="stock-status">In stock</p>
+            <a href="product.html">SHOP NOW</a>
           </div>
         </div>
       </section>
@@ -100,16 +104,14 @@
                 type="text"
                 placeholder="Email address"
                 name="mail"
-                required
-              />
-              <div>
-                <img src="images/RainyDays_Logo.png" alt="RainyDays Logo" class="footer-logo-mobile"/>
-              </div>
-            </div>
+                required/>
             <div class="subscribe-button">
               <input type="submit" value="Subscribe" />
             </div>
           </form>
+          <div>
+            <img src="images/RainyDays_Logo.png" alt="RainyDays Logo" class="footer-logo-mobile"/>
+          </div>
         </div>
       </section>
     </footer>
