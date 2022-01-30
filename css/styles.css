@@ -197,6 +197,12 @@ p {
   margin-bottom: 30px;
 }
 
+input [type="subscribe"] {
+  background: none;
+  border-style: solid;
+  border-color: #732922;
+}
+
 @media (min-width: 600px) {
   a:link {
     color: #732922;
