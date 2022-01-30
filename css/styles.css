@@ -197,10 +197,22 @@ p {
   margin-bottom: 30px;
 }
 
-input [type="subscribe"] {
-  background: none;
-  border-style: solid;
-  border-color: #732922;
+input[type="text"] {
+  border: 1px solid #732922;
+  color: #732922;
+  padding: 7px;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  display: inline-flex;
+  background: #732922;
+  color: white;
+  border: none;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: bold;
+  padding: 8px;
 }
 
 @media (min-width: 600px) {
@@ -302,7 +314,12 @@ input [type="subscribe"] {
     font-weight: bold;
   }
 
+  .footer-logo-div {
+    flex: auto;
+  }
+
   .footer-logo {
+    object-fit: revert;
     max-width: 100px;
     max-height: 50px;
     margin-bottom: 50px;
