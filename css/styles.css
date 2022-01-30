@@ -70,13 +70,17 @@ nav a {
   margin-top: 125px;
 }
 
+hr {
+  margin-bottom: 0px;
+}
+
 .register-now a:link {
   background: #d94d1a;
   color: white;
   text-decoration: none;
-  width: 90px;
+  width: 100px;
   height: 20px;
-  padding: 10px;
+  padding: 12px;
   font-family: azo-sans-web, sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -332,6 +336,9 @@ input[type="submit"] {
 }
 
 @media (max-width: 600px) {
+  hr {
+    display: none;
+  }
   .products {
     flex-direction: column;
     max-height: 100%;
