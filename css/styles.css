@@ -94,8 +94,10 @@ hr {
   justify-content: flex-end;
 }
 
-h1 {
-  text-align: center;
+.header-image {
+  width: 100%;
+  height: auto;
+  position: static;
 }
 
 .products-grid-container {
@@ -105,15 +107,24 @@ h1 {
   margin: 100px;
 }
 
-.contact-section {
-  display: flex;
-  flex: 2;
+.about-grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 70px;
+  margin: 100px;
 }
 
-.header-image {
-  width: 100%;
-  height: auto;
-  position: static;
+.about-content a {
+  color: #d94d1a;
+  border-style: solid;
+  padding: 5px;
+  text-decoration: none;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
 }
 
 .new-arrivals,
@@ -199,12 +210,11 @@ h3 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .product-text {
-  font-size: 16px;
   text-align: center;
 }
 
@@ -212,6 +222,18 @@ p {
 .featured-stock-status {
   color: #732922;
   font-weight: lighter;
+}
+
+.confirmation-message {
+  text-align: center;
+}
+
+.confirmation-message h1 {
+  text-align: center;
+}
+
+.footer p {
+  font-size: 13px;
 }
 
 .footer-flex-container {
@@ -388,6 +410,11 @@ input[type="submit"] {
   }
 
   .products-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .about-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
