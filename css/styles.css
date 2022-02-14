@@ -1,3 +1,8 @@
+:root {
+  font-family: josefin-sans, sans-serif;
+  color: #732922;
+}
+
 a:link {
   color: #732922;
 }
@@ -11,7 +16,7 @@ a:hover {
   position: static;
 }
 
-.RainyDaysLogo {
+.rainydays-logo {
   max-width: 200px;
   position: static;
   margin-top: 30px;
@@ -24,7 +29,6 @@ a:hover {
   gap: 10px;
   justify-content: space-between;
   font-size: 1.25rem;
-  color: #732922;
   margin-top: 20px;
   padding: 10px;
 }
@@ -59,7 +63,6 @@ nav a {
   color: white;
   padding-right: 10px;
   padding-bottom: 15px;
-  font-family: josefin-sans, sans-serif;
 }
 
 #menu-checkbox:checked ~ nav {
@@ -90,6 +93,22 @@ hr {
   display: flex;
   flex: 1;
   justify-content: flex-end;
+}
+
+.products-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  height: 800px;
+}
+
+.products-grid-container div {
+  background-color: aqua;
+}
+
+.contact-section {
+  display: flex;
+  flex: 2;
 }
 
 .header-image {
@@ -144,6 +163,19 @@ img {
   height: 70%;
 }
 
+.product-grid {
+  flex: 1;
+  position: relative;
+  margin-top: 15px;
+}
+
+.product-grid img {
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+  height: 70%;
+}
+
 .featured-product-content a:link {
   color: #d94d1a;
   border-style: solid;
@@ -171,14 +203,12 @@ h3 {
 }
 
 p {
-  font-family: josefin-sans, sans-serif;
   font-size: 12px;
   font-weight: bold;
 }
 
 .stock-status,
 .featured-stock-status {
-  font-family: josefin-sans, sans-serif;
   color: #732922;
   font-weight: lighter;
 }
@@ -187,7 +217,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  color: #732922;
   background: rgba(217, 77, 26, 0.18);
   margin-top: 100px;
 }
@@ -203,7 +232,6 @@ p {
 
 input[type="text"] {
   border: 1px solid #732922;
-  color: #732922;
   padding: 7px;
   font-family: azo-sans-web, sans-serif;
   font-weight: bold;
@@ -219,11 +247,15 @@ input[type="submit"] {
   padding: 8px;
 }
 
-@media (min-width: 600px) {
-  a:link {
-    color: #732922;
-  }
+.copyright-container {
+  display: flex;
+  flex: 1;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+}
 
+@media (min-width: 600px) {
   a:hover {
     color: #f2d027;
   }
@@ -242,15 +274,13 @@ input[type="submit"] {
   .icons a {
     display: inline-block;
     text-decoration: none;
-    font-family: josefin-sans, sans-serif;
     font-size: 1rem;
   }
 
   nav {
     display: inline-block;
     background: none;
-    width: 100%;
-    font-family: josefin-sans, sans-serif;
+    width: 90%;
     font-size: 1rem;
   }
 
@@ -273,10 +303,7 @@ input[type="submit"] {
     left: 80%;
     transform: translate(-50%, -50%);
     color: white;
-    border-style: solid;
     border-color: white;
-    padding: 5px;
-    font-family: azo-sans-web, sans-serif;
     font-weight: bold;
   }
 
@@ -333,6 +360,10 @@ input[type="submit"] {
   .footer-logo-mobile {
     display: none;
   }
+
+  .copyright-container {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 600px) {
@@ -354,12 +385,6 @@ input[type="submit"] {
     margin: 5px;
   }
 
-  .RainyDaysLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
   .footer-logo {
     display: none;
   }
