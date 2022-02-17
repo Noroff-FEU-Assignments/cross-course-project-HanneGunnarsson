@@ -120,6 +120,7 @@ hr {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 20px;
+  row-gap: 55px;
   margin: 100px;
 }
 
@@ -382,9 +383,8 @@ input[type="submit"] {
 
   .product-content {
     position: absolute;
-    top: 80%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    top: 67%;
+    left: 50%;
     color: #d94d1a;
   }
 
