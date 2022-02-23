@@ -24,6 +24,12 @@ a:hover {
   margin-left: 10px;
 }
 
+.social-icons {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #d94d1a;
+}
+
 .icons {
   display: flex;
   flex: 3;
@@ -32,6 +38,7 @@ a:hover {
   font-size: 1.25rem;
   margin-top: 20px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .hamburger-icon {
@@ -121,6 +128,56 @@ hr {
   text-align: center;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-left {
+  margin-left: 100px;
+  width: 50%;
+}
+
+#name,
+#email,
+#phone,
+#subject {
+  background: rgba(217, 77, 26, 0.18);
+  color: #d94d1a;
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+form ::placeholder {
+  color: #d94d1a;
+  opacity: 50%;
+}
+
+textarea {
+  font-family: josefin-sans, sans-serif;
+  font-weight: bold;
+}
+
+input[type="button"] {
+  background: rgba(217, 77, 26, 0.18);
+  width: 70%;
+  color: #d94d1a;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .products-grid-container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -154,16 +211,64 @@ h1 {
   text-align: center;
 }
 
-.confirmation-message {
-  display: block;
-  height: 250px;
-  margin-top: 125px;
+.home-link a {
+  color: #732922;
+  padding: 20px;
+}
+
+.continue-shopping {
+  color: white;
+  background-color: #d94d1a;
+  border-style: solid;
+  border-color: #d94d1a;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  color: #d94d1a;
+  background-color: none;
+  border-style: solid;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.checkout-container {
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.checkout-container img {
+  height: 100px;
+  width: 100px;
+}
+
+.checkout-container a {
+  border-style: solid;
+  border-color: #d94d1a;
+  color: #d94d1a;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.summary {
+  margin-top: 50px;
+}
+
+.price-info {
+  text-align: right;
+}
+
+.confirmation-message p {
   text-align: center;
 }
 
 .confirmation-message h1 {
+  margin-top: 125px;
   text-align: center;
-  margin-left: none;
+  margin-bottom: 50px;
 }
 
 .new-arrivals,
@@ -271,6 +376,7 @@ p {
   font-weight: bold;
   line-height: 1.6;
   text-align: left;
+  text-align: center;
 }
 
 .stock-status,
@@ -279,8 +385,22 @@ p {
   font-weight: lighter;
 }
 
+.product-info-container {
+  text-align: center;
+}
+
+.product-info-container ul {
+  display: table;
+  margin: 0 auto;
+}
+
 .product-rating-container p {
   font-size: 16px;
+}
+
+.star-icon {
+  color: #f2d027;
+  font-size: 1.25rem;
 }
 
 .footer p {
@@ -354,7 +474,8 @@ input[type="submit"] {
   nav {
     display: inline-block;
     background: none;
-    width: 90%;
+    width: 50%;
+    height: 50px;
     font-size: 1rem;
   }
 
@@ -364,6 +485,14 @@ input[type="submit"] {
   }
 
   h1 {
+    text-align: left;
+  }
+
+  .checkout {
+    text-align: center;
+  }
+
+  p {
     text-align: left;
   }
 
@@ -402,11 +531,23 @@ input[type="submit"] {
     color: white;
   }
 
+  .contact-container {
+    flex-direction: row;
+  }
+
   .product {
     border-style: solid;
     border-color: lightgrey;
     border-width: 2px;
     margin-top: 0px;
+  }
+
+  .product h3 {
+    margin: 0px;
+  }
+
+  .product-info-container {
+    text-align: left;
   }
 
   .product-text {
@@ -415,10 +556,6 @@ input[type="submit"] {
   }
 
   .product-content {
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    transform: translate(-50%, -50%);
     color: #d94d1a;
   }
 
@@ -437,31 +574,19 @@ input[type="submit"] {
     margin: 100px;
   }
 
-  .shop-actions {
-    display: inline-flex;
-  }
-
-  .shop-actions a {
-    color: white;
-    background-color: #d94d1a;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .add-to-cart {
-    background-color: none;
-    border: #d94d1a;
-    padding: 10px;
-    font-family: azo-sans-web, sans-serif;
-  }
-
   .shop-now {
     display: inline-flex;
     top: 80%;
     right: 180%;
     transform: translate(180%, 180%);
     text-decoration: none;
+  }
+
+  .checkout-container {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    gap: 400px;
   }
 
   .footer-logo-div {
@@ -503,6 +628,12 @@ input[type="submit"] {
   .about-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+
+  .top-left-column {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
   .footer-flex-container {
