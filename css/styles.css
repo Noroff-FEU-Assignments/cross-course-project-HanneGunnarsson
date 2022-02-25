@@ -383,6 +383,7 @@ p {
 .featured-stock-status {
   color: #732922;
   font-weight: lighter;
+  text-align: left;
 }
 
 .product-info-container {
@@ -396,6 +397,8 @@ p {
 
 .product-rating-container p {
   font-size: 16px;
+  font-weight: normal;
+  margin: 0px;
 }
 
 .star-icon {
@@ -508,8 +511,10 @@ input[type="submit"] {
     margin-left: 30px;
   }
 
-  .featured-product-content a:link {
+  .featured-product-content a {
     position: absolute;
+    color: white;
+    border-color: white;
     top: 85%;
     left: 80%;
     transform: translate(-50%, -50%);
@@ -519,7 +524,7 @@ input[type="submit"] {
     color: #f2d027;
     position: absolute;
     top: 65%;
-    left: 76%;
+    left: 70%;
     transform: translate(-20%, -80%);
   }
 
@@ -557,6 +562,7 @@ input[type="submit"] {
 
   .product-content {
     color: #d94d1a;
+    margin-left: 10px;
   }
 
   .product-intro-container {
@@ -587,6 +593,10 @@ input[type="submit"] {
     flex: 2;
     flex-direction: row;
     gap: 400px;
+  }
+
+  .cost-overview {
+    display: inline-flex;
   }
 
   .footer-logo-div {
