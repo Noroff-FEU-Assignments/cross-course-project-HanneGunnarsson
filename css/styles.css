@@ -13,15 +13,7 @@ a:hover {
 }
 
 .header {
-  height: 100px;
   position: static;
-}
-
-.rainydays-logo {
-  max-width: 200px;
-  position: static;
-  margin-top: 30px;
-  margin-left: 10px;
 }
 
 .social-icons {
@@ -453,8 +445,11 @@ input[type="submit"] {
 }
 
 @media (min-width: 600px) {
-  a:hover {
-    color: #f2d027;
+  .rainydays-logo {
+    max-width: 200px;
+    position: static;
+    margin-top: 30px;
+    margin-left: 10px;
   }
 
   .icons {
