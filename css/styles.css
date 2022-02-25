@@ -17,6 +17,14 @@ a:hover {
   position: static;
 }
 
+.rainydays-logo {
+  max-width: 200px;
+  position: static;
+  margin-top: 30px;
+  margin-left: 10px;
+  align-items: center;
+}
+
 .social-icons {
   text-align: left;
   font-size: 1.5rem;
