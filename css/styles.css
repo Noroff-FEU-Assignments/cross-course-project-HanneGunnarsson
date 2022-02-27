@@ -3,13 +3,14 @@
   color: #732922;
 }
 
+a:hover {
+  color: #f2d027;
+}
+
 a:link {
   color: #732922;
   text-decoration: none;
-}
-
-a:hover {
-  color: #f2d027;
+  cursor: pointer;
 }
 
 .header {
@@ -25,7 +26,7 @@ a:hover {
 }
 
 .social-icons {
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
   color: #d94d1a;
 }
@@ -38,7 +39,6 @@ a:hover {
   font-size: 1.25rem;
   margin-top: 20px;
   padding: 10px;
-  cursor: pointer;
 }
 
 .hamburger-icon {
@@ -72,12 +72,10 @@ nav {
   width: 90px;
   height: 150px;
   margin-top: 10px;
-  text-decoration: none;
 }
 
 nav a {
   display: flex;
-  text-decoration: none;
   color: white;
   padding-right: 10px;
   padding-bottom: 15px;
@@ -98,7 +96,6 @@ hr {
 .register-now a:link {
   background: #d94d1a;
   color: white;
-  text-decoration: none;
   width: 100px;
   height: 20px;
   padding: 12px;
@@ -115,17 +112,12 @@ hr {
 
 .register-now a:hover {
   background: #f2d027;
-  cursor: pointer;
 }
 
 .header-image {
   width: 100%;
   height: auto;
   position: static;
-}
-
-.about-content {
-  text-align: center;
 }
 
 .contact-container {
@@ -187,22 +179,16 @@ input[type="button"] {
 }
 
 .about-grid-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 70px;
-  margin: 100px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  margin: 20px;
 }
 
-.about-content {
-  text-align: left;
-}
-
-.about-content a {
+.about-shop-now a {
   color: #d94d1a;
   border-style: solid;
   padding: 5px;
-  text-decoration: none;
-  font-family: azo-sans-web, sans-serif;
   font-weight: bold;
 }
 
@@ -213,7 +199,6 @@ h1 {
 
 .home-link a {
   color: #732922;
-  padding: 20px;
 }
 
 .continue-shopping {
@@ -222,7 +207,6 @@ h1 {
   border-style: solid;
   border-color: #d94d1a;
   padding: 10px;
-  text-decoration: none;
   font-weight: bold;
 }
 
@@ -231,18 +215,20 @@ h1 {
   background-color: none;
   border-style: solid;
   padding: 10px;
-  text-decoration: none;
   font-weight: bold;
 }
 
 .checkout-container {
-  justify-content: center;
-  margin-top: 100px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .checkout-container img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
 }
 
 .checkout-container a {
@@ -255,10 +241,6 @@ h1 {
 
 .summary {
   margin-top: 50px;
-}
-
-.price-info {
-  text-align: right;
 }
 
 .confirmation-message p {
@@ -287,8 +269,6 @@ h2 {
 }
 
 .products h3 {
-  display: flex;
-  flex: 3;
   color: #d94d1a;
 }
 
@@ -338,7 +318,6 @@ img {
   border-style: solid;
   border-color: #d94d1a;
   padding: 5px;
-  text-decoration: none;
   font-family: azo-sans-web, sans-serif;
   font-weight: bold;
 }
@@ -348,7 +327,6 @@ img {
   border-style: solid;
   border-color: #d94d1a;
   padding: 5px;
-  text-decoration: none;
   font-weight: bold;
 }
 
@@ -361,8 +339,11 @@ img {
   border-style: solid;
   border-color: #d94d1a;
   padding: 5px;
-  text-decoration: none;
   font-weight: bold;
+}
+
+.product-grid-content p {
+  text-align: left;
 }
 
 h3 {
@@ -375,7 +356,6 @@ p {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.6;
-  text-align: left;
   text-align: center;
 }
 
@@ -473,7 +453,6 @@ input[type="submit"] {
 
   .icons a {
     display: inline-block;
-    text-decoration: none;
     font-size: 1rem;
   }
 
@@ -539,8 +518,17 @@ input[type="submit"] {
     color: white;
   }
 
+  .about-grid-container {
+    flex-direction: row;
+    margin: 50px;
+  }
+
   .contact-container {
     flex-direction: row;
+  }
+
+  .social-icons {
+    text-align: left;
   }
 
   .product {
@@ -588,14 +576,17 @@ input[type="submit"] {
     top: 80%;
     right: 180%;
     transform: translate(180%, 180%);
-    text-decoration: none;
   }
 
   .checkout-container {
-    display: flex;
-    flex: 2;
     flex-direction: row;
+    justify-content: center;
     gap: 400px;
+    margin-top: 100px;
+  }
+
+  .price-info {
+    text-align: right;
   }
 
   .cost-overview {
@@ -636,11 +627,6 @@ input[type="submit"] {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     color: #d94d1a;
-  }
-
-  .about-grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
   }
 
   .top-left-column {
