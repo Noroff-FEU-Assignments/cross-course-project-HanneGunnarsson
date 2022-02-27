@@ -175,7 +175,8 @@ input[type="button"] {
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 20px;
   row-gap: 55px;
-  margin: 100px;
+  margin: 100px auto;
+  max-width: 1000px;
 }
 
 .about-grid-container {
