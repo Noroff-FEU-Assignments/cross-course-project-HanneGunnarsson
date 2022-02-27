@@ -13,6 +13,10 @@ a:link {
   cursor: pointer;
 }
 
+a:visited {
+  color: #f2d027;
+}
+
 .header {
   height: 100px;
   position: static;
@@ -128,8 +132,8 @@ hr {
 }
 
 .contact-left {
-  margin-left: 100px;
-  width: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #name,
@@ -184,6 +188,11 @@ input[type="button"] {
   flex: 2;
   flex-direction: column;
   margin: 20px;
+  text-align: center;
+}
+
+.about-shop-now {
+  text-align: center;
 }
 
 .about-shop-now a {
@@ -203,7 +212,7 @@ h1 {
 }
 
 .continue-shopping {
-  color: white;
+  color: white !important;
   background-color: #d94d1a;
   border-style: solid;
   border-color: #d94d1a;
@@ -524,8 +533,18 @@ input[type="submit"] {
     margin: 50px;
   }
 
+  .about-shop-now {
+    text-align: left;
+    margin-left: 50px;
+  }
+
   .contact-container {
     flex-direction: row;
+  }
+
+  .contact-left {
+    margin-left: 100px;
+    width: 50%;
   }
 
   .social-icons {
